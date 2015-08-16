@@ -79,48 +79,53 @@ mainPanel(
 
     br(),
 
-    strong('Input values'),
-    p('Input values can be separated by newlines, spaces, commas, or tabs.'),
+
+    strong('Code'),
+    p('Source code for this application is based on',
+    a('"The handbook of Research in Foreign Language Learning and Teaching" (Takeuchi & Mizumoto, 2012).', href='http://mizumot.com/handbook/', target="_blank")),
+
+    p('The code for this web application is available at',
+    a('GitHub.', href='https://github.com/mizumot/mes', target="_blank")),
+
+    p('If you want to run this code on your computer (in a local R session), run the code below:',
+    br(),
+    code('library(shiny)'),br(),
+    code('runGitHub("mes","mizumot")')
+    ),
 
     br(),
 
+    strong('Citation in Publications'),
+    p('Mizumoto, A. (2015). Langtest (Version 1.0) [Web application]. Retrieved from http://langtest.jp'),
 
-strong('Code'),
-p('Source code for this application is based on',
-a('"The handbook of Research in Foreign Language Learning and Teaching" (Takeuchi & Mizumoto, 2012).', href='http://mizumot.com/handbook/', target="_blank")),
+    br(),
 
-p('The code for this web application is available at',
-a('GitHub.', href='https://github.com/mizumot/paired', target="_blank")),
+    strong('Article'),
+    p('Mizumoto, A., & Plonsky, L. (2015).', a("R as a lingua franca: Advantages of using R for quantitative research in applied linguistics.", href='http://applij.oxfordjournals.org/content/early/2015/06/24/applin.amv025.abstract', target="_blank"), em('Applied Linguistics,'), 'Advance online publication. doi:10.1093/applin/amv025'),
 
-p('If you want to run this code on your computer (in a local R session), run the code below:',
-br(),
-code('library(shiny)'),br(),
-code('runGitHub("mes","mizumot")')
-),
+    br(),
 
-br(),
+    strong('Recommended'),
+    p('To learn more about R, I suggest this excellent and free e-book (pdf),',
+    a("A Guide to Doing Statistics in Second Language Research Using R,", href="http://cw.routledge.com/textbooks/9780805861853/guide-to-R.asp", target="_blank"),
+    'written by Dr. Jenifer Larson-Hall.'),
 
-strong('Recommended'),
-p('To learn more about R, I suggest this excellent and free e-book (pdf),',
-a("A Guide to Doing Statistics in Second Language Research Using R,", href="http://cw.routledge.com/textbooks/9780805861853/guide-to-R.asp", target="_blank"),
-'written by Dr. Jenifer Larson-Hall.'),
+    p('Also, if you are a cool Mac user and want to use R with GUI,',
+    a("MacR", href="http://www.urano-ken.com/blog/2013/02/25/installing-and-using-macr/", target="_blank"),
+    'is defenitely the way to go!'),
 
-p('Also, if you are a cool Mac user and want to use R with GUI,',
-a("MacR", href="http://www.urano-ken.com/blog/2013/02/25/installing-and-using-macr/", target="_blank"),
-'is defenitely the way to go!'),
+    br(),
 
-br(),
+    strong('Author'),
+    p(a("Atsushi MIZUMOTO,", href="http://mizumot.com", target="_blank"),' Ph.D.',br(),
+    'Associate Professor of Applied Linguistics',br(),
+    'Faculty of Foreign Language Studies /',br(),
+    'Graduate School of Foreign Language Education and Research,',br(),
+    'Kansai University, Osaka, Japan'),
 
-strong('Author'),
-p(a("Atsushi MIZUMOTO,", href="http://mizumot.com", target="_blank"),' Ph.D.',br(),
-'Associate Professor of Applied Linguistics',br(),
-'Faculty of Foreign Language Studies /',br(),
-'Graduate School of Foreign Language Education and Research,',br(),
-'Kansai University, Osaka, Japan'),
+    br(),
 
-br(),
-
-a(img(src="http://i.creativecommons.org/p/mark/1.0/80x15.png"), target="_blank", href="http://creativecommons.org/publicdomain/mark/1.0/")
+    a(img(src="http://i.creativecommons.org/p/mark/1.0/80x15.png"), target="_blank", href="http://creativecommons.org/publicdomain/mark/1.0/")
 )
 )
 )
